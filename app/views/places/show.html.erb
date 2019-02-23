@@ -35,11 +35,6 @@
     <br />
     <div class="clear"></div>
 
-    <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
-    <%= f.input :message %>
-    <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-    <% end %>
-
     <div class="col-10 offset-1">
         <h1 class="float-left">Comments</h1>
         <!-- Button trigger modal -->

@@ -17,11 +17,6 @@
       expires: 1.week.from_now.httpdate,
       cache_control: 'max-age=604800'
     }
-<<<<<<< HEAD
-    config.fog_directory  = ENV["AWS_BUCKET"]              # required
-    config.fog_provider =ENV["AWS_REGION"]
-    config.fog_public = true
-=======
   
     config.aws_credentials = {
       access_key_id:     ENV.fetch('AWS_ACCESS_KEY'),
@@ -36,5 +31,4 @@
     # config.aws_signer = -> (unsigned_url, options) do
     #   Aws::CF::Signer.sign_url(unsigned_url, options)
     # end
->>>>>>> carrierwave-aws
   end

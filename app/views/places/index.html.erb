@@ -9,6 +9,11 @@
     <%= place.address %>
   </p><br />
 
+  <% if place.photos.present?%>
+  <%= image_tag (place.photos.last.picture.url)%>
+  <%= place.photos.last.caption%>
+  <% end %>
+
   <% if place.user.present? %>
   <small>
     <%= place.user.email %></small>

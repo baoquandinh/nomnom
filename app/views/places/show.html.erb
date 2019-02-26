@@ -32,7 +32,7 @@
             };
 
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
+                zoom: 14,
                 center: myLatLng
             });
 
@@ -143,6 +143,7 @@
                 <div class="modal-body">
                     <%= f.input :caption %>
                     <%= f.input :picture %>
+                    <p><small>Please upload photos that are 500x500 in dimension</small></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
